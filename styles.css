@@ -14,9 +14,26 @@ header img {
     height: 100px;
 }
 
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Em um header com display:flex, isso empurra os links para a direita */
+header a:first-of-type {
+    margin-left: auto;
+}
+
 header {
     background-color: rgb(32, 32, 255);
     padding: 5px;
+    display: flex;
+    /* um pra esquerda e outro pra direita */
+    align-items: center;
 }
 
 /* ÁREA onde a div vai ficar CENTRALIZADA */
